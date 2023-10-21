@@ -1,0 +1,100 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "header header header header"
+                        "navegacion menu menu menu"
+                        ;
+}
+
+.header{
+    grid-area: header;
+    background: rgb(37, 37, 37);
+}
+
+.navegacion{
+    grid-area: navegacion;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 563px;
+    background: rgb(37, 37, 37);
+}
+.menu{
+    grid-area: menu;
+}
+.registrar{
+    margin: 50px;
+}
+.buscador{
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    border: 1px solid black;
+}
+.buscanom{
+    width: 100%;
+    height: 40px;
+    padding-left: 30px;
+}
+.buscanom input{
+    width: 100%;
+    height: 38px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-width: 0;
+    outline: none;
+}
+
+.botonbuscar{
+    width: 10%;
+    height: 40px;
+}
+.botonbuscar input{
+    width: 100%;
+    height: 38px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-width: 0;
+}
+
+.navegar{
+    margin: 40px;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+.nav-header{
+    border-bottom: 2px solid white;
+    width: auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.navbar-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.navbar-nav .contenedor{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.navbar-nav .contenedor:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+  

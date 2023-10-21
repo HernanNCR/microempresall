@@ -1,0 +1,115 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header header"
+                        "navegacion menu menu menu"
+                        ;
+}
+
+.header{
+    grid-area: header;
+    background: rgb(37, 37, 37);
+}
+ 
+.navegacion{
+    grid-area: navegacion;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 563px;
+    background: rgb(37, 37, 37);
+}
+.menu{
+    grid-area: menu;
+    margin: 30px;
+}
+.registrar{
+    border: 1px solid rgb(37, 37, 37);
+    
+     
+}
+.registrar .menuheader{
+    background-color: rgb(37, 37, 37);
+    font-size: 30px;
+    color: white;
+}
+.registro{
+    overflow-y: auto;
+    width: 920px;
+    height: 450px;   
+}
+#form{
+    width: 80%;
+    margin: 40px;
+}
+
+
+.navegar{
+    margin: 40px;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+.nav-header{
+    border-bottom: 2px solid white;
+    width: auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.navbar-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.navbar-nav .contenedor{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.navbar-nav .contenedor:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+.letras-partidas span{
+    position: relative;
+    color: black;
+    font-size: 60px;
+}
+  
+.letras-partidas span::before {
+    content: attr(data-letra);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: red;
+}
+  
+@media screen and (max-width:760px){
+    body{
+        grid-template-areas: "header header header header"
+                            "navegacion navegacion navegacion navegacion"
+                            "menu menu menu menu"
+        ;
+    }
+    
+    .navegacion{
+        grid-area: navegacion;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        background: rgb(37, 37, 37);
+    }
+}

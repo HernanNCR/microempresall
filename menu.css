@@ -1,0 +1,82 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header header header header"
+                        "navegacion menu menu menu"
+                        ;
+}
+
+.header{
+    grid-area: header;
+    background: rgb(37, 37, 37);
+}
+
+.navegacion{
+    grid-area: navegacion;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 563px;
+    background: rgb(37, 37, 37);
+}
+.menu{
+    grid-area: menu;
+    
+    
+}
+/* .menu .cabeza{
+    width: 100px;
+    height: 100px;
+    background: rgb(84, 84, 233);
+    margin: 0px 0px 15px 50px;
+    border-radius: 50%;
+}
+.menu .cuerpo{
+    width: 200px;
+    height: 150px;
+    background: rgb(84, 84, 233);
+    border-radius: 50%;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+} */
+
+.navegar{
+    margin: 40px;
+    text-decoration: none;
+    color: black;
+    width: 300px;
+}
+.nav-header{
+    border-bottom: 2px solid white;
+    width: auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+.navbar-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 60px;
+}
+.navbar-nav .contenedor{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+.navbar-nav .contenedor:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+@media screen and(max-width:710px){
+    body{
+        background: black;
+    }
+}
